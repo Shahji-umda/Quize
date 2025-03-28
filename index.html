@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1><u>Simple Quiz</u></h1>
+        <div id="quiz">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <input type="radio" name="q1" value="a"> a) Berlin<br>
+                <input type="radio" name="q1" value="b"> b) Madrid<br>
+                <input type="radio" name="q1" value="c"> c) Paris<br>
+                <input type="radio" name="q1" value="d"> d) Rome<br>
+            </div>
+
+            <div class="question">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <input type="radio" name="q2" value="a"> a) Earth<br>
+                <input type="radio" name="q2" value="b"> b) Mars<br>
+                <input type="radio" name="q2" value="c"> c) Jupiter<br>
+                <input type="radio" name="q2" value="d"> d) Venus<br>
+            </div>
+
+            <div class="question">
+                <p>3. Who wrote the play 'Romeo and Juliet'?</p>
+                <input type="radio" name="q3" value="a"> a) Charles Dickens<br>
+                <input type="radio" name="q3" value="b"> b) William Shakespeare<br>
+                <input type="radio" name="q3" value="c"> c) George Orwell<br>
+                <input type="radio" name="q3" value="d"> d) Jane Austen<br>
+            </div>
+
+            <div class="question">
+                <p>4. What is the largest ocean on Earth?</p>
+                <input type="radio" name="q4" value="a"> a) Atlantic Ocean<br>
+                <input type="radio" name="q4" value="b"> b) Indian Ocean<br>
+                <input type="radio" name="q4" value="c"> c) Arctic Ocean<br>
+                <input type="radio" name="q4" value="d"> d) Pacific Ocean<br>
+            </div>
+
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>Your Score: <span id="score"></span></h2>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
